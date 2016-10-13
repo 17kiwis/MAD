@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Workout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Time (Minutes)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGn-Kh-J8D">
+                                <rect key="frame" x="30" y="30" width="184" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show weekly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrU-FH-1JC">
+                                <rect key="frame" x="30" y="61" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workouts/week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhR-pT-CNs">
+                                <rect key="frame" x="30" y="92" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8J-9C-JRY">
+                                <rect key="frame" x="40" y="275" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories Burned" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44B-2q-oh8">
+                                <rect key="frame" x="40" y="326" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPn-TB-mGO">
+                                <rect key="frame" x="505" y="275" width="55" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="Zpv-y2-9sZ"/>
+                                    <constraint firstAttribute="height" constant="36" id="jld-mb-eAM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od6-vC-qFy">
+                                <rect key="frame" x="505" y="327" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zS4-0C-ZYZ">
+                                <rect key="frame" x="56" y="172" width="488" height="42"/>
+                                <segments>
+                                    <segment title="Run"/>
+                                    <segment title="Swim"/>
+                                    <segment title="Bike"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeInfo:" destination="BYZ-38-t0r" eventType="valueChanged" id="8hj-kj-LgT"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfT-th-lSg">
+                                <rect key="frame" x="286" y="221" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hpv-rH-B9p">
+                                <rect key="frame" x="355" y="90" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="faA-zD-4ol"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeWorkoutPerWeek:" destination="BYZ-38-t0r" eventType="valueChanged" id="gKG-kp-LVL"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u72-9g-bJ4">
+                                <rect key="frame" x="371" y="51" width="51" height="31"/>
+                                <connections>
+                                    <action selector="updateWeek:" destination="BYZ-38-t0r" eventType="valueChanged" id="feh-7m-SX2"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="week work out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7m6-ye-yQc">
+                                <rect key="frame" x="433" y="143" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GXj-pq-Xzo">
+                                <rect key="frame" x="180" y="372" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="HjL-Ao-xLI"/>
+                                    <constraint firstAttribute="height" constant="128" id="Z7R-Og-0Uf"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RdW-Ao-dYj">
+                                <rect key="frame" x="388" y="20" width="99" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="FRU-yA-G9P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="44B-2q-oh8" secondAttribute="bottom" constant="253" id="4D1-Jz-8rt"/>
+                            <constraint firstItem="hpv-rH-B9p" firstAttribute="top" secondItem="u72-9g-bJ4" secondAttribute="bottom" constant="8" symbolic="YES" id="4uS-l3-dZD"/>
+                            <constraint firstItem="zrU-FH-1JC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="51n-E4-PUm"/>
+                            <constraint firstItem="zS4-0C-ZYZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Wu-vM-gf9"/>
+                            <constraint firstItem="zrU-FH-1JC" firstAttribute="top" secondItem="iGn-Kh-J8D" secondAttribute="bottom" constant="10" id="AMZ-1q-rXE"/>
+                            <constraint firstItem="CPn-TB-mGO" firstAttribute="firstBaseline" secondItem="j8J-9C-JRY" secondAttribute="firstBaseline" id="Acm-CX-cok"/>
+                            <constraint firstItem="GXj-pq-Xzo" firstAttribute="trailing" secondItem="u72-9g-bJ4" secondAttribute="trailing" id="Cys-zB-mK9"/>
+                            <constraint firstItem="u72-9g-bJ4" firstAttribute="bottom" secondItem="zrU-FH-1JC" secondAttribute="bottom" id="FBF-i5-L5K"/>
+                            <constraint firstItem="rhR-pT-CNs" firstAttribute="top" secondItem="zrU-FH-1JC" secondAttribute="bottom" constant="10" id="Fxa-xC-rlZ"/>
+                            <constraint firstItem="44B-2q-oh8" firstAttribute="top" secondItem="j8J-9C-JRY" secondAttribute="bottom" constant="30" id="Iyh-MQ-Epo"/>
+                            <constraint firstItem="zS4-0C-ZYZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="172" id="KHO-ld-P4D"/>
+                            <constraint firstAttribute="trailing" secondItem="hpv-rH-B9p" secondAttribute="trailing" constant="129" id="KMA-zE-l0W"/>
+                            <constraint firstItem="XfT-th-lSg" firstAttribute="top" secondItem="zS4-0C-ZYZ" secondAttribute="bottom" constant="8" symbolic="YES" id="LmP-gX-quM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GXj-pq-Xzo" secondAttribute="bottom" constant="100" id="LxA-oq-Rro"/>
+                            <constraint firstItem="GXj-pq-Xzo" firstAttribute="top" secondItem="Od6-vC-qFy" secondAttribute="bottom" constant="24" id="PCJ-Om-9c6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Od6-vC-qFy" secondAttribute="trailing" constant="20" id="QLc-Bk-5MG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CPn-TB-mGO" secondAttribute="trailing" constant="20" id="XBN-8t-RpO"/>
+                            <constraint firstItem="iGn-Kh-J8D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="YfQ-rJ-NJM"/>
+                            <constraint firstAttribute="trailing" secondItem="RdW-Ao-dYj" secondAttribute="trailing" constant="113" id="Yvo-Jj-DUD"/>
+                            <constraint firstItem="GXj-pq-Xzo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aHb-6B-m7Q"/>
+                            <constraint firstItem="iGn-Kh-J8D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ayW-HG-sbk"/>
+                            <constraint firstItem="XfT-th-lSg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="286" id="cVf-wa-eUp"/>
+                            <constraint firstItem="j8J-9C-JRY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="hx7-o2-hey"/>
+                            <constraint firstItem="CPn-TB-mGO" firstAttribute="top" secondItem="zS4-0C-ZYZ" secondAttribute="bottom" constant="62" id="kq9-h0-BSu"/>
+                            <constraint firstItem="zS4-0C-ZYZ" firstAttribute="top" secondItem="7m6-ye-yQc" secondAttribute="bottom" constant="8" symbolic="YES" id="mHV-te-Kkf"/>
+                            <constraint firstItem="rhR-pT-CNs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="psU-MV-5aq"/>
+                            <constraint firstItem="zS4-0C-ZYZ" firstAttribute="trailing" secondItem="7m6-ye-yQc" secondAttribute="trailing" id="qsf-6B-rqy"/>
+                            <constraint firstItem="44B-2q-oh8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="r2c-z6-yq8"/>
+                            <constraint firstItem="zS4-0C-ZYZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="36" id="xqi-OH-c0S"/>
+                            <constraint firstItem="u72-9g-bJ4" firstAttribute="top" secondItem="RdW-Ao-dYj" secondAttribute="bottom" constant="1" id="yZB-cC-2et"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="caloriesBurned" destination="Od6-vC-qFy" id="ve0-6x-Zac"/>
+                        <outlet property="miles" destination="CPn-TB-mGO" id="nPa-Wk-wEG"/>
+                        <outlet property="sportControl" destination="zS4-0C-ZYZ" id="g13-Ew-QkR"/>
+                        <outlet property="sportImg" destination="GXj-pq-Xzo" id="x10-Py-4Wb"/>
+                        <outlet property="weekSwitch" destination="u72-9g-bJ4" id="uwl-vf-zps"/>
+                        <outlet property="workOutTime" destination="RdW-Ao-dYj" id="9OW-c0-v3P"/>
+                        <outlet property="workoutPerWeek" destination="7m6-ye-yQc" id="DHk-iP-HVi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="426"/>
+        </scene>
+    </scenes>
+</document>
