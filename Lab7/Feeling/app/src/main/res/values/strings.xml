@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Feeling</string>
+    <string name="name_edit">Name</string>
+    <string name="mood_button">Mood</string>
+    <string name="feeling"></string>
+
+    <string-array name="moods">
+        <item>Happy</item>
+        <item>Sad</item>
+        <item>Confused</item>
+        <item>Angry</item>
+
+    </string-array>
+
+    <string name="toggle_on">positive</string>
+    <string name="toggle_off">negative</string>
+    <string name="meditate_switch">Meditate</string>
+    <string name="yoga">Yoga</string>
+    <string name="yoga1">Yin</string>
+    <string name="yoga2">Bikram</string>
+    <string name="yoga3">Hatha</string>
+
+    <string name="enlightened_check">enlightened</string>
+    <string name="conservative_check">conservative</string>
+    <string name="sarcastic_check">sarcastic</string>
+    <string name="secretive_check">secretive</string>
+</resources>
