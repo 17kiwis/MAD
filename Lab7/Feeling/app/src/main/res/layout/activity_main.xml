@@ -9,80 +9,52 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.shwu3484.feeling.MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="14dp"
+        android:id="@+id/linear1"
+        android:weightSum="1">
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/nameEditText"
         android:layout_marginTop="31dp"
         android:hint="@string/name_edit"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_weight="0.76" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/feeling"
-        android:id="@+id/feelingTextView"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="26dp" />
+        <ToggleButton
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/energyToggleButton"
+            android:textOn="@string/toggle_on"
+            android:textOff="@string/toggle_off"
+             />
+    </LinearLayout>
 
-    <Spinner
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/nameEditText"
-        android:layout_toEndOf="@+id/button"
-        android:id="@+id/spinner"
-        android:entries="@array/moods"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New ToggleButton"
-        android:id="@+id/energyToggleButton"
-        android:textOn="@string/toggle_on"
-        android:textOff="@string/toggle_off"
-        android:layout_below="@+id/spinner"
-        android:layout_alignRight="@+id/checkBox1"
-        android:layout_alignEnd="@+id/checkBox1" />
-
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/meditate_switch"
-        android:id="@+id/switch1"
-        android:layout_alignTop="@+id/energyToggleButton"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView"
-        android:layout_below="@+id/energyToggleButton"
-        android:layout_alignRight="@+id/nameEditText"
-        android:layout_alignEnd="@+id/nameEditText" />
-
-    <RadioGroup
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/yogaRadioGroup"
-        android:orientation="horizontal"
+        android:layout_below="@id/linear1"
+        android:id="@+id/grid_radio"
+        android:layout_marginTop="25dp">
 
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-    <RadioButton
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/radioButton1"
         android:text="@string/yoga"
-        />
+        android:id="@+id/textView"
+       />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yogaRadioGroup"
+            android:orientation="horizontal">
 
 
         <RadioButton
@@ -96,19 +68,96 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioButton1"
             android:text="@string/yoga1"
             />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton4"
+            android:id="@+id/radioButton3"
             android:text="@string/yoga3"
             />
+        </RadioGroup>
+
+         </GridLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grid_radio"
+        android:layout_marginTop="25dp"
+        android:id="@+id/table_check">
+
+    <TableRow>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/conservative_check"
+        android:id="@+id/checkBox1"
+       />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enlightened_check"
+        android:id="@+id/checkBox2"
+      />
+    </TableRow>
+    <TableRow>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sarcastic_check"
+        android:id="@+id/checkBox3"
+       />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/secretive_check"
+        android:id="@+id/checkBox4"
+      />
+    </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear2"
+        android:layout_below="@id/table_check"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/spinner"
+        android:entries="@array/moods"
+        />
 
 
-    </RadioGroup>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/meditate_switch"
+        android:id="@+id/switch1"
+       />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feeling"
+        android:id="@+id/feelingTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -116,45 +165,8 @@
         android:text="@string/mood_button"
         android:onClick="findMood"
         android:id="@+id/button"
-        android:layout_gravity="bottom"
-        android:layout_below="@+id/checkBox4"
-        android:layout_alignRight="@+id/feelingTextView"
-        android:layout_alignEnd="@+id/feelingTextView" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/conservative_check"
-        android:id="@+id/checkBox1"
-        android:layout_below="@+id/yogaRadioGroup"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/enlightened_check"
-        android:id="@+id/checkBox2"
-        android:layout_alignBottom="@+id/checkBox1"
-        android:layout_alignLeft="@+id/feelingTextView"
-        android:layout_alignStart="@+id/feelingTextView" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sarcastic_check"
-        android:id="@+id/checkBox3"
-        android:layout_below="@+id/checkBox1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/secretive_check"
-        android:id="@+id/checkBox4"
-        android:layout_alignTop="@+id/checkBox3"
-        android:layout_toRightOf="@+id/feelingTextView"
-        android:layout_toEndOf="@+id/feelingTextView" />
+        android:layout_alignTop="@+id/linear2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
 
 </RelativeLayout>
