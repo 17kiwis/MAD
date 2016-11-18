@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BMI</string>
+
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="yourBMI">Your BMI</string>
+    <string name="youAre">You Are</string>
+    <string name="note">Note</string>
+    <string name="feet">Feet</string>
+    <string name="inch">Inch</string>
+    <string name="pound">Pound</string>
+    <string name="normal">Normal</string>
+    <string name="imessage"></string>
+    <string name="bmiresult"></string>
+    <string name="notes"></string>
+    <string name="inches">Inches</string>
+    <color name="peach">#ACF0F2</color>
+    <string name="calculate">calculate</string>
+    <color name="color">#1695A3</color>
+
+
+</resources>
