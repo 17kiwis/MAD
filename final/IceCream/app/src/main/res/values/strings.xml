@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">IceCream</string>
+    <string name="title">I scream for Ice Cream</string>
+    <string name="switchtext">Dairy-Free</string>
+    <string name="message"></string>
+    <string name="enter"></string>
+    <string name="toggle_on">cuo</string>
+    <string name="toggle_off">cone</string>
+    <string-array name="favor">
+        <item>Salted Carame</item>
+        <item>Death by chocolate</item>
+        <item>Cookies and Cream</item>
+    </string-array>
+
+    <string name="cup">Cup</string>
+
+    <string name="findTreat">Find Treat</string>
+    <string name="treatme">Treat Me</string>
+    <string name="ic_radio">ice cream</string>
+    <string name="fz_radio">frozen yogurt</string>
+    <string name="g_radio">gelato</string>
+    <string name="s_check">sprinkels</string>
+    <string name="h_check">hot fudge</string>
+    <string name="n_check">nuts</string>
+
+    <string name="find">Find Treat</string>
+    <string name="suggestion"></string>
+
+</resources>
