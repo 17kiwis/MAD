@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/peach"
+    tools:context="com.example.booboo.bmi.MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear1"
+
+        android:weightSum="1">
+
+        <TextView
+            android:text="@string/weight"
+            android:id="@+id/weight"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.22" />
+
+        <EditText
+            android:hint="@string/pound"
+            android:textSize="16sp"
+            android:id="@+id/enterWeight"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear1"
+        android:id="@+id/linear2"
+        android:weightSum="1">
+
+        <TextView
+            android:text="@string/height"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:layout_weight="0.77" />
+
+        <EditText
+            android:layout_width="116dp"
+            android:layout_height="62dp"
+            android:textSize="16sp"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/enterHeight"
+            android:hint="@string/feet"
+            />
+
+        <EditText
+            android:id="@+id/enterInches"
+            android:hint="@string/inches"
+            android:textSize="16sp"
+            android:layout_width="116dp"
+            android:layout_height="62dp"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            />
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculate"
+        android:id="@+id/grid"
+        android:orientation="horizontal"
+        android:columnCount="2"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:text="@string/yourBMI"
+            android:id="@+id/YourBMI"
+            android:textSize="16sp"
+            android:layout_width="116dp"
+            android:layout_height="44dp"
+            />
+
+        <TextView
+            android:text="@string/bmiresult"
+            android:id="@+id/BMIResult"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:text="@string/youAre"
+            android:id="@+id/bodyState"
+            android:textSize="16sp"
+            android:layout_width="116dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="15dp" />
+
+
+
+        <TextView
+            android:text="@string/imessage"
+            android:layout_marginTop="15dp"
+            android:id="@+id/Message"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear3"
+        android:weightSum="1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:text="@string/choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:layout_marginEnd="25dp" />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/webs"
+        android:id="@+id/spinner"
+       />
+
+    <Button
+        android:text="@string/suggestions"
+        android:onClick="findWeb(MainActivity)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/findButton"
+        android:layout_marginEnd="28dp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/notes"
+        android:hint="@string/note"
+        android:id="@+id/notes"
+        android:background="@color/color"
+        android:textColor="#FFF"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/grid"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/calculate"
+        android:onClick="changView"
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/linear2"
+        android:layout_alignStart="@+id/linear3" />
+
+</RelativeLayout>
